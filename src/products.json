@@ -4,69 +4,79 @@
        "name": "milk",
       "categoryName": "Dairy",
        "price": 14,
-       "inStock": 98
+       "inStock": 98,
+       "lastMonth": 10
     },
     {
         "id": 2,
         "name": "meatballs",
         "categoryName": "Meat",
          "price": 4,
-         "inStock": 8
+         "inStock": 8,
+         "lastMonth": 1
       },
       {
         "id": 3,
         "name": "eggs",
         "categoryName": "Dairy",
          "price": 84,
-         "inStock": 1
+         "inStock": 1,
+         "lastMonth": 12
       },
       {
         "id": 4,
         "name": "Ikura",
         "categoryName": "seafood",
          "price": 58,
-         "inStock": 6
+         "inStock": 6,
+         "lastMonth": 2
       },
       {
         "id": 5,
         "name": "Ramen",
         "categoryName": "seafood",
          "price": 64,
-         "inStock": 5
+         "inStock": 5,
+         "lastMonth": 18
       },
       {
         "id": 6,
         "name": "shrimp",
         "categoryName": "seafood",
          "price": 64,
-         "inStock": 32
+         "inStock": 32,
+         "lastMonth": 7
       },
       {
         "id": 7,
         "name": "octopus",
         "categoryName": "seafood",
          "price": 34,
-         "inStock": 3
+         "inStock": 3,
+         "lastMonth": 2
       },
       {
         "id": 8,
         "name": "Banana bread",
         "categoryName": "pastry",
          "price": 24,
-         "inStock": 4
+         "inStock": 4,
+         "lastMonth": 4
       },
       {
         "id": 9,
         "name": "sausage",
         "categoryName": "meat",
          "price": 74,
-         "inStock": 37
+         "inStock": 37,
+         "lastMonth": 3
       },
       {
         "id": 10,
         "name": "mayo",
         "categoryName": "condiments",
          "price": 89,
-         "inStock": 34
+         "inStock": 34,
+         "lastMonth": 14
       }
 ]

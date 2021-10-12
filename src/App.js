@@ -16,24 +16,12 @@ function App() {
 
   const series = [
     {
-      category: "Dairy",
-      value: 2,
+      category: "Last Month",
+      value: 10,
     },
     {
-      category: "Meat",
-      value: 2,
-    },
-    {
-      category: "Seafood",
-      value: 4,
-    },
-    {
-      category: "condiments",
-      value: 1,
-    },
-    {
-      category: "pastry",
-      value: 1,
+      category: "Current Moment",
+      value: 98,
     },
   ];
   
@@ -47,12 +35,13 @@ function App() {
       <Column field="categoryName" title="Category Name" />
       <Column field="price" title="Price" />
       <Column field="inStock" title="In stock" />
+      <Column field="lastMonth" title="In stock last month"/>
     </Grid>
     
 
     <div className="chart-container">
     <Chart>
-    <ChartTitle text="Items in stock by quantity" />
+    <ChartTitle text="Items in stock In comparison with last month" />
     <ChartLegend position="bottom" />
     <ChartSeries>
       <ChartSeriesItem
