@@ -16,24 +16,24 @@ function App() {
 
   const series = [
     {
-      category: "0-14",
-      value: 0.2545,
+      category: "Dairy",
+      value: 2,
     },
     {
-      category: "15-24",
-      value: 0.1552,
+      category: "Meat",
+      value: 2,
     },
     {
-      category: "25-54",
-      value: 0.4059,
+      category: "Seafood",
+      value: 4,
     },
     {
-      category: "55-64",
-      value: 0.0911,
+      category: "condiments",
+      value: 1,
     },
     {
-      category: "65+",
-      value: 0.0933,
+      category: "pastry",
+      value: 1,
     },
   ];
   
