@@ -3,70 +3,70 @@
       "id": 1,
        "name": "milk",
       "categoryName": "Dairy",
-       "price": 54,
+       "price": 14,
        "inStock": 98
     },
     {
         "id": 2,
         "name": "meatballs",
         "categoryName": "Meat",
-         "price": 54,
+         "price": 4,
          "inStock": 8
       },
       {
         "id": 3,
         "name": "eggs",
         "categoryName": "Dairy",
-         "price": 54,
+         "price": 84,
          "inStock": 1
       },
       {
         "id": 4,
         "name": "Ikura",
         "categoryName": "seafood",
-         "price": 54,
+         "price": 58,
          "inStock": 6
       },
       {
         "id": 5,
         "name": "Ramen",
         "categoryName": "seafood",
-         "price": 54,
+         "price": 64,
          "inStock": 5
       },
       {
         "id": 6,
         "name": "shrimp",
         "categoryName": "seafood",
-         "price": 54,
+         "price": 64,
          "inStock": 32
       },
       {
         "id": 7,
         "name": "octopus",
         "categoryName": "seafood",
-         "price": 54,
+         "price": 34,
          "inStock": 3
       },
       {
         "id": 8,
         "name": "Banana bread",
         "categoryName": "pastry",
-         "price": 54,
+         "price": 24,
          "inStock": 4
       },
       {
         "id": 9,
         "name": "sausage",
         "categoryName": "meat",
-         "price": 54,
+         "price": 74,
          "inStock": 37
       },
       {
         "id": 10,
         "name": "mayo",
         "categoryName": "condiments",
-         "price": 54,
+         "price": 89,
          "inStock": 34
       }
 ]
