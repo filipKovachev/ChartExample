@@ -5,3 +5,7 @@
 .hover {
   cursor: pointer;
 }
+
+.link {
+  padding: 10px;
+}
