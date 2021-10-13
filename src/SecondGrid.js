@@ -1,28 +1,28 @@
 import React from 'react';
 import products from '../src/products.json';
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
+import { process } from '@progress/kendo-data-query';
 
 
 function SecondGrid() {
-    const [skip, setSkip] = React.useState(0);
-    const [take, setTake] = React.useState(2);
+  const [dataState, setDataState] = React.useState({skip: 0, take: 2});
+  const [result, setResult] = React.useState(process(products, dataState));
 
-    const onPageChange = (event) => {
-        setSkip(event.page.skip);
-        setTake(event.page.take);
-    }
-
+ const onDataStateChange = (event) => {
+     setDataState(event.dataState);
+     setResult(process(products, event.dataState))
+ }
     return (
       
         <div>
-      
-         
-          <Grid data={products.slice(skip, skip + take)}
+    
+          <Grid 
+           data={result}
+           filterable={true}
            pageable={true}
-           skip={skip}
-           take={take}
-           onPageChange={onPageChange}
            total={products.length}
+           onDataStateChange={onDataStateChange}
+           {...dataState}
           >
            
           <Column field="id" title="ID"/>
