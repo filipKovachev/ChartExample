@@ -2,22 +2,15 @@ import React from 'react';
 import products from '../src/products.json';
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
 import { process } from '@progress/kendo-data-query';
-import {
-    Chart,
-    ChartLegend,
-    ChartSeries,
-    ChartSeriesItem,
-    ChartSeriesLabels,
-  } from "@progress/kendo-react-charts";
+import { Chart, ChartLegend, ChartSeries, ChartSeriesItem, ChartSeriesLabels } from '@progress/kendo-react-charts';
   import "hammerjs";
 
   
-
 function SecondGrid() {
   const [dataState, setDataState] = React.useState({skip: 0, take: 4});
   const [result, setResult] = React.useState(process(products, dataState));
-
-  const labelContent = (e) => e.category;
+  
+  const labelContent = e => e.category;
 
 
  const onDataStateChange = (event) => {
@@ -45,24 +38,16 @@ function SecondGrid() {
 
           
           </Grid>
-        
-          <Chart>
-    <ChartSeries>
-      <ChartSeriesItem
-        type="donut"
-        data={result}
-        categoryField="kind"
-        field="share"
-      >
-        <ChartSeriesLabels
-          color="#fff"
-          background="none"
-          content={labelContent}
-        />
-      </ChartSeriesItem>
-    </ChartSeries>
-    <ChartLegend visible={false} />
-  </Chart>
+
+         <Chart>
+          <ChartSeries>
+           <ChartSeriesItem type="donut" data={products} categoryField="price" field="inStock">
+             <ChartSeriesLabels color="#fff" background="none" content={labelContent} />
+           </ChartSeriesItem>
+         </ChartSeries>
+         <ChartLegend visible={false} />
+         </Chart>
+
         </div>
       );
 }
