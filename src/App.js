@@ -24,7 +24,7 @@ function App() {
     },
     {
       category: "Current Moment",
-      value: data,
+      value: 10,
     },
   ];
 
@@ -52,9 +52,8 @@ function App() {
       <Column field="id" title="ID"/>
       <Column field="name" title="Name"/>
       <Column field="categoryName" title="Category Name"/>
-      <Column field="price" title="Price"/>
+      <Column field="price" title="Price" />
       <Column field="inStock" title="In stock"  cell={MyCustomCell}/>
-      <Column field="lastMonth" title="In stock last month" cell={MyCustomCell}/>
     </Grid>
     
 
