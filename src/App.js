@@ -33,6 +33,7 @@ function App() {
     const value = props.dataItem[field];
     return (
       <td
+      className="hover"
       onClick={() => setData( data = value)}
       >
        {value}
