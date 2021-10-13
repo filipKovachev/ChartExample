@@ -1,5 +1,8 @@
 import '@progress/kendo-theme-default/dist/all.css';
 import './App.css';
+import products from './products.json';
+
+import React, { useState } from 'react';
 import { Grid, GridColumn as Column } from "@progress/kendo-react-grid";
 import {
   Chart,
@@ -8,23 +11,39 @@ import {
   ChartSeriesItem,
   ChartTitle,
 } from "@progress/kendo-react-charts";
-import products from './products.json';
+
 
 function App() {
 
+  let [data, setData] = useState(0);
 
-
-  const series = [
+  let series = [
     {
       category: "Last Month",
-      value: 10,
+      value: data,
     },
     {
       category: "Current Moment",
-      value: 98,
+      value: data,
     },
   ];
-  
+
+  const CustomCell = (props) => {
+    const field = props.field || "";
+    const value = props.dataItem[field];
+    return (
+      <td
+      onClick={() => setData( data = value)}
+      >
+       {value}
+      </td>
+    );
+  };
+
+
+
+  const MyCustomCell = (props) => <CustomCell {...props} myProp={products} />;
+ 
   
   return (
     <div className="App">
@@ -32,10 +51,10 @@ function App() {
        
       <Column field="id" title="ID"/>
       <Column field="name" title="Name"/>
-      <Column field="categoryName" title="Category Name" />
-      <Column field="price" title="Price" />
-      <Column field="inStock" title="In stock" />
-      <Column field="lastMonth" title="In stock last month"/>
+      <Column field="categoryName" title="Category Name"/>
+      <Column field="price" title="Price"/>
+      <Column field="inStock" title="In stock"  cell={MyCustomCell}/>
+      <Column field="lastMonth" title="In stock last month" cell={MyCustomCell}/>
     </Grid>
     
 
