@@ -20,11 +20,11 @@ function App() {
   let series = [
     {
       category: "Last Month",
-      value: data,
+      value: 10,
     },
     {
       category: "Current Moment",
-      value: 10,
+      value: data,
     },
   ];
 
