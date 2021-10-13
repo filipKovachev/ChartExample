@@ -12,8 +12,6 @@ import {
 } from "@progress/kendo-react-charts";
 
 
-
-
 function FirstGrid() {
 
     let [data, setData] = useState(0);
