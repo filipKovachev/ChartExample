@@ -41,7 +41,7 @@ function SecondGrid() {
 
          <Chart>
           <ChartSeries>
-           <ChartSeriesItem type="donut" data={products} categoryField="price" field="inStock">
+           <ChartSeriesItem type="donut" data={result} categoryField="price" field="inStock">
              <ChartSeriesLabels color="#fff" background="none" content={labelContent} />
            </ChartSeriesItem>
          </ChartSeries>
