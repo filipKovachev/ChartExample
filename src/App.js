@@ -53,7 +53,7 @@ function App() {
       <Column field="name" title="Name"/>
       <Column field="categoryName" title="Category Name"/>
       <Column field="price" title="Price" />
-      <Column field="inStock" title="In stock"  cell={MyCustomCell}/>
+      <Column field="inStock" title="In stock (Click on cell to update the pie chart)"  cell={MyCustomCell}/>
     </Grid>
     
 
