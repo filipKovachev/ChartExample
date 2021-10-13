@@ -16,6 +16,8 @@ import {
 function App() {
 
   let [data, setData] = useState(0);
+  const DataContext = React.createContext(products);
+
 
   let series = [
     {
@@ -42,10 +44,12 @@ function App() {
   };
 
 
+  <DataContext.Provider>
+    <CustomCell
+    myProp={products}
+    />
+  </DataContext.Provider>
 
-  const MyCustomCell = (props) => <CustomCell {...props} myProp={products} />;
- 
-  
   return (
     <div className="App">
       <Grid data={products}>
@@ -54,7 +58,7 @@ function App() {
       <Column field="name" title="Name"/>
       <Column field="categoryName" title="Category Name"/>
       <Column field="price" title="Price" />
-      <Column field="inStock" title="In stock (Click on cell to update the pie chart)"  cell={MyCustomCell}/>
+      <Column field="inStock" title="In stock (Click on cell to update the pie chart)"  cell={CustomCell}/>
     </Grid>
     
 
