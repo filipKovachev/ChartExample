@@ -10,6 +10,7 @@ import {
   ChartSeriesItem,
   ChartTitle,
 } from "@progress/kendo-react-charts";
+import "hammerjs";
 
 
 function FirstGrid() {
